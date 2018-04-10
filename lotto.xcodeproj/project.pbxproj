@@ -1,0 +1,391 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A763CFB02075BF9200F7DA22 /* ScratchUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A763CFAE2075BF9200F7DA22 /* ScratchUIView.swift */; };
+		A763CFB12075BF9200F7DA22 /* ScratchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A763CFAF2075BF9200F7DA22 /* ScratchView.swift */; };
+		A763CFB32075C03700F7DA22 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A763CFB22075C03700F7DA22 /* TestViewController.swift */; };
+		A763CFB62075C0F400F7DA22 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = A763CFB42075C0F300F7DA22 /* mask.png */; };
+		A763CFB72075C0F400F7DA22 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A763CFB52075C0F300F7DA22 /* image.jpg */; };
+		A778D26F2073ACFB00D79D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778D26E2073ACFB00D79D89 /* AppDelegate.swift */; };
+		A778D2712073ACFB00D79D89 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778D2702073ACFB00D79D89 /* ViewController.swift */; };
+		A778D2742073ACFB00D79D89 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A778D2722073ACFB00D79D89 /* Main.storyboard */; };
+		A778D2762073ACFB00D79D89 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A778D2752073ACFB00D79D89 /* Assets.xcassets */; };
+		A778D2792073ACFB00D79D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A778D2772073ACFB00D79D89 /* LaunchScreen.storyboard */; };
+		A778D2852073B0B800D79D89 /* QRCodeReader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A778D2842073B0B800D79D89 /* QRCodeReader.framework */; };
+		A778D2892073B11200D79D89 /* QrcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778D2882073B11200D79D89 /* QrcodeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A763CFAE2075BF9200F7DA22 /* ScratchUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchUIView.swift; sourceTree = "<group>"; };
+		A763CFAF2075BF9200F7DA22 /* ScratchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScratchView.swift; sourceTree = "<group>"; };
+		A763CFB22075C03700F7DA22 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		A763CFB42075C0F300F7DA22 /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
+		A763CFB52075C0F300F7DA22 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		A778D26B2073ACFB00D79D89 /* lotto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lotto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A778D26E2073ACFB00D79D89 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A778D2702073ACFB00D79D89 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A778D2732073ACFB00D79D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A778D2752073ACFB00D79D89 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A778D2782073ACFB00D79D89 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A778D27A2073ACFB00D79D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A778D2842073B0B800D79D89 /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = "<group>"; };
+		A778D2882073B11200D79D89 /* QrcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrcodeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A778D2682073ACFB00D79D89 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A778D2852073B0B800D79D89 /* QRCodeReader.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A778D2622073ACFB00D79D89 = {
+			isa = PBXGroup;
+			children = (
+				A778D26D2073ACFB00D79D89 /* lotto */,
+				A778D26C2073ACFB00D79D89 /* Products */,
+				A778D2832073B0B700D79D89 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A778D26C2073ACFB00D79D89 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A778D26B2073ACFB00D79D89 /* lotto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A778D26D2073ACFB00D79D89 /* lotto */ = {
+			isa = PBXGroup;
+			children = (
+				A763CFB52075C0F300F7DA22 /* image.jpg */,
+				A763CFB42075C0F300F7DA22 /* mask.png */,
+				A763CFAE2075BF9200F7DA22 /* ScratchUIView.swift */,
+				A763CFAF2075BF9200F7DA22 /* ScratchView.swift */,
+				A778D26E2073ACFB00D79D89 /* AppDelegate.swift */,
+				A778D2702073ACFB00D79D89 /* ViewController.swift */,
+				A778D2722073ACFB00D79D89 /* Main.storyboard */,
+				A778D2752073ACFB00D79D89 /* Assets.xcassets */,
+				A778D2772073ACFB00D79D89 /* LaunchScreen.storyboard */,
+				A778D27A2073ACFB00D79D89 /* Info.plist */,
+				A778D2882073B11200D79D89 /* QrcodeViewController.swift */,
+				A763CFB22075C03700F7DA22 /* TestViewController.swift */,
+			);
+			path = lotto;
+			sourceTree = "<group>";
+		};
+		A778D2832073B0B700D79D89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A778D2842073B0B800D79D89 /* QRCodeReader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A778D26A2073ACFB00D79D89 /* lotto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A778D27D2073ACFB00D79D89 /* Build configuration list for PBXNativeTarget "lotto" */;
+			buildPhases = (
+				A778D2672073ACFB00D79D89 /* Sources */,
+				A778D2682073ACFB00D79D89 /* Frameworks */,
+				A778D2692073ACFB00D79D89 /* Resources */,
+				A778D2802073B03600D79D89 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = lotto;
+			productName = lotto;
+			productReference = A778D26B2073ACFB00D79D89 /* lotto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A778D2632073ACFB00D79D89 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Dev;
+				TargetAttributes = {
+					A778D26A2073ACFB00D79D89 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A778D2662073ACFB00D79D89 /* Build configuration list for PBXProject "lotto" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A778D2622073ACFB00D79D89;
+			productRefGroup = A778D26C2073ACFB00D79D89 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A778D26A2073ACFB00D79D89 /* lotto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A778D2692073ACFB00D79D89 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A778D2792073ACFB00D79D89 /* LaunchScreen.storyboard in Resources */,
+				A778D2762073ACFB00D79D89 /* Assets.xcassets in Resources */,
+				A778D2742073ACFB00D79D89 /* Main.storyboard in Resources */,
+				A763CFB62075C0F400F7DA22 /* mask.png in Resources */,
+				A763CFB72075C0F400F7DA22 /* image.jpg in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A778D2802073B03600D79D89 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/QRCodeReader.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A778D2672073ACFB00D79D89 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A778D2712073ACFB00D79D89 /* ViewController.swift in Sources */,
+				A763CFB12075BF9200F7DA22 /* ScratchView.swift in Sources */,
+				A778D26F2073ACFB00D79D89 /* AppDelegate.swift in Sources */,
+				A778D2892073B11200D79D89 /* QrcodeViewController.swift in Sources */,
+				A763CFB32075C03700F7DA22 /* TestViewController.swift in Sources */,
+				A763CFB02075BF9200F7DA22 /* ScratchUIView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A778D2722073ACFB00D79D89 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A778D2732073ACFB00D79D89 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A778D2772073ACFB00D79D89 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A778D2782073ACFB00D79D89 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A778D27B2073ACFB00D79D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A778D27C2073ACFB00D79D89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A778D27E2073ACFB00D79D89 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDZ99YLETD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = lotto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teruten.lotto.project.lotto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A778D27F2073ACFB00D79D89 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = SDZ99YLETD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = lotto/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.teruten.lotto.project.lotto;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A778D2662073ACFB00D79D89 /* Build configuration list for PBXProject "lotto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A778D27B2073ACFB00D79D89 /* Debug */,
+				A778D27C2073ACFB00D79D89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A778D27D2073ACFB00D79D89 /* Build configuration list for PBXNativeTarget "lotto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A778D27E2073ACFB00D79D89 /* Debug */,
+				A778D27F2073ACFB00D79D89 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A778D2632073ACFB00D79D89 /* Project object */;
+}
