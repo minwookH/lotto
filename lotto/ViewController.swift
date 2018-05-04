@@ -21,12 +21,12 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        test.append("111111")
-        test.append("222222")
-        test.append("333333")
-        test.append("444444")
-        test.append("555555")
-        test.append("666666")
+        test.append("금주의 추천번호")
+        test.append("번호메모")
+        test.append("구매내역")
+        test.append("번호조합")
+        test.append("당첨번호&당첨금")
+        test.append("당첨후기")
         
         
         menuCollectionView.delegate = self
@@ -44,20 +44,21 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCollectionViewCell", for: indexPath) as! MainCollectionViewCell
         
         cell.displayContent(name: test[indexPath.row], image: "aa")
-        if indexPath.row == 0{
-            cell.backgroundColor = UIColor.blue
-        } else if indexPath.row == 1{
-            cell.backgroundColor = UIColor.purple
-        } else if indexPath.row == 2{
-            cell.backgroundColor = UIColor.lightGray
-        } else if indexPath.row == 3{
-            cell.backgroundColor = UIColor.green
-        } else if indexPath.row == 4{
-            cell.backgroundColor = UIColor.gray
-        } else if indexPath.row == 5{
-            cell.backgroundColor = UIColor.brown
-        }
-        //cell.backgroundColor = UIColor.blue
+//        if indexPath.row == 0{
+//            cell.backgroundColor = UIColor.blue
+//        } else if indexPath.row == 1{
+//            cell.backgroundColor = UIColor.purple
+//        } else if indexPath.row == 2{
+//            cell.backgroundColor = UIColor.lightGray
+//        } else if indexPath.row == 3{
+//            cell.backgroundColor = UIColor.green
+//        } else if indexPath.row == 4{
+//            cell.backgroundColor = UIColor.gray
+//        } else if indexPath.row == 5{
+//            cell.backgroundColor = UIColor.brown
+//        }
+        
+        cell.backgroundColor = UIColor.lightGray
         
         return cell
     }
