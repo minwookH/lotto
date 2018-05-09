@@ -1,3 +1,7 @@
+github "Alamofire/Alamofire" "4.7.2"
 github "Hearst-DD/ObjectMapper" "3.1.0"
 github "realm/realm-cocoa" "v3.5.0"
+github "scinfu/SwiftSoup" "1.7.1"
+github "tid-kijyun/Kanna" "4.0.0"
+github "tristanhimmelman/AlamofireObjectMapper" "5.0.0"
 github "yannickl/QRCodeReader.swift" "8.1.1"

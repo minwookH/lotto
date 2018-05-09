@@ -23,6 +23,7 @@
 		A78048CB2089A5CE005A9078 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7787025208887BF0085097A /* RealmSwift.framework */; };
 		A78E2661209C1C02007A6992 /* SaveLottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78E2660209C1C02007A6992 /* SaveLottoViewController.swift */; };
 		A78E2663209C31F5007A6992 /* SaveLottoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78E2662209C31F5007A6992 /* SaveLottoCollectionViewCell.swift */; };
+		A78E2666209C5673007A6992 /* NetworkApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78E2665209C5673007A6992 /* NetworkApiManager.swift */; };
 		A7A4B686207CD17A0078FF83 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A4B685207CD17A0078FF83 /* MainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -32,6 +33,7 @@
 		A763CFB22075C03700F7DA22 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A763CFB42075C0F300F7DA22 /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
 		A763CFB52075C0F300F7DA22 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		A77506B220A19FDF002D4E95 /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna.framework; path = Carthage/Build/iOS/Kanna.framework; sourceTree = "<group>"; };
 		A776B3D120860EE60045C40F /* MainCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		A7787025208887BF0085097A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
 		A7787026208887BF0085097A /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		A778D2882073B11200D79D89 /* QrcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrcodeViewController.swift; sourceTree = "<group>"; };
 		A78E2660209C1C02007A6992 /* SaveLottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLottoViewController.swift; sourceTree = "<group>"; };
 		A78E2662209C31F5007A6992 /* SaveLottoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLottoCollectionViewCell.swift; sourceTree = "<group>"; };
+		A78E2665209C5673007A6992 /* NetworkApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiManager.swift; sourceTree = "<group>"; };
 		A7A4B685207CD17A0078FF83 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -82,6 +85,7 @@
 		A778D26D2073ACFB00D79D89 /* lotto */ = {
 			isa = PBXGroup;
 			children = (
+				A78E2664209C565D007A6992 /* network */,
 				A78E265F209C1BD6007A6992 /* saveLotto */,
 				A763CFB52075C0F300F7DA22 /* image.jpg */,
 				A763CFB42075C0F300F7DA22 /* mask.png */,
@@ -104,6 +108,7 @@
 		A778D2832073B0B700D79D89 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A77506B220A19FDF002D4E95 /* Kanna.framework */,
 				A7787026208887BF0085097A /* Realm.framework */,
 				A7787025208887BF0085097A /* RealmSwift.framework */,
 				A778D2842073B0B800D79D89 /* QRCodeReader.framework */,
@@ -118,6 +123,14 @@
 				A78E2662209C31F5007A6992 /* SaveLottoCollectionViewCell.swift */,
 			);
 			path = saveLotto;
+			sourceTree = "<group>";
+		};
+		A78E2664209C565D007A6992 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				A78E2665209C5673007A6992 /* NetworkApiManager.swift */,
+			);
+			path = network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +213,10 @@
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/QRCodeReader.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SwiftSoup.framework",
 			);
 			outputPaths = (
 			);
@@ -223,6 +240,7 @@
 				A778D2892073B11200D79D89 /* QrcodeViewController.swift in Sources */,
 				A763CFB32075C03700F7DA22 /* TestViewController.swift in Sources */,
 				A78E2663209C31F5007A6992 /* SaveLottoCollectionViewCell.swift in Sources */,
+				A78E2666209C5673007A6992 /* NetworkApiManager.swift in Sources */,
 				A763CFB02075BF9200F7DA22 /* ScratchUIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +384,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = lotto/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -384,6 +406,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SDZ99YLETD;
 				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);

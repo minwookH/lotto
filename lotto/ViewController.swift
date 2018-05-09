@@ -84,6 +84,11 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
             print("didSelectItemAt 0")
         } else if indexPath.row == 1{
             print("didSelectItemAt 1")
+            
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "SaveLottoViewController") as! SaveLottoViewController
+            self.present(nextViewController, animated:true, completion:nil)
         } else if indexPath.row == 2{
             print("didSelectItemAt 2")
         } else if indexPath.row == 3{

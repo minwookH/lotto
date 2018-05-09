@@ -30,6 +30,7 @@ class SaveLottoViewController: UIViewController, UICollectionViewDataSource, UIC
     
     @objc func backAction() -> Void {
         print("back action!!!!!")
+        self.dismiss(animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {
