@@ -42,9 +42,9 @@ class QrcodeViewController: UIViewController, QRCodeReaderViewControllerDelegate
             print("start requestLottoQrCode1 result")
             
             do {
-                let html: String = "<p>An <a href='http://example.com/'><b>example</b></a> link.</p>";
-                let doc: Document = try! SwiftSoup.parse(data)
-                let link: Element = try! doc.select("th.f_black").first()!
+                let html: String = "<p> An <a href='http://example.com/'><b>example</b></a> link. <a href='http://example.com1111/'><b>example1111</b></a></p>";
+                let doc: Document = try! SwiftSoup.parse(html)
+                let link: Element = try! doc.select("a").first()!
                 
 //                let text: String = try! doc.body()!.text(); // "An example link"
 //                let linkHref: String = try! link.attr("href"); // "http://example.com/"
@@ -54,31 +54,95 @@ class QrcodeViewController: UIViewController, QRCodeReaderViewControllerDelegate
                 let linkInnerH: String = try! link.html(); // "<b>example</b>"
                 
                 //print("linkOuterH : \(linkOuterH)")
+                //print("")
+                //print("linkInnerH : \(linkInnerH)")
+                //print("")
+                
+                let docc: Document = try SwiftSoup.parse(data)
+                
+                let linka11: Element = try docc.select("li.pt10").first()!
                 print("")
-                print("linkInnerH : \(linkInnerH)")
+                print("linka.html() : \(try! linka11.html())")
                 print("")
                 
-                let linka: Element = try! doc.select("tbody").first()!
                 
-                let doc1: Document = try! SwiftSoup.parse(try! linka.html())
-                print("linka.ownText() : \(linka.ownText())")
-                print("linka.html() : \(try! linka.html())")
-                print("linka.text() : \(try! linka.text())")
-                print("")
                 
-                let els: Elements = try doc1.select("tr")
-                print("els.size() : \(els.size())")
-                for link: Element in els.array() {
-                    //let linkHref: String = try link.attr("href")
-                    let linkText: String = try link.text()
-                    let linkHtml: String = try! link.html();
-                    print("linkText : \(linkText)")
-                    print("linkHtml : \(linkHtml)")
+                //let docc1: Document = try! SwiftSoup.parse(linka11.html())
+                for aabb: Element in try linka11.getElementsByTag("img").array() {
+                    
+            
+                    print("")
                 }
                 
-                let link1: Element = try! doc1.select("tr").first()!
+                let linka: Element = try! docc.select("tbody").first()!
+                
+                let doc1: Document = try! SwiftSoup.parse(try! linka.html())
+//                print("data() : \(linka.data())")
+//                print("tagName() : \(linka.tagName())")
+//                print("linka.html() : \(try! linka.html())")
+//                print("linka.text() : \(try! linka.text())")
+//                print("")
+//                print("linka.text111() : \(try! linka.getElementsByTag("td"))")
+//                print("linka.text222() : \(try! linka.getElementsByTag("td").html())")
+//                print("linka.text333() : \(try! linka.getElementsByTag("td").size())")
                 print("")
-                print("link.html()111 : \(try! link1.html())")
+                for link1: Element in try linka.getElementsByTag("td").array() {
+                    //let linkHref: String = try link.attr("href")
+                    let linkText: String = try link1.text()
+                    let linkHtml: String = try link1.html()
+                    
+                    var cc = linkText.components(separatedBy: " ")
+                    
+                    for link11: Element in try link1.getElementsByAttribute("src").array() {
+                        
+                        let linkText1: String = try link11.text()
+                        let linkHtml1: String = try link11.html()
+                        let link11: String = try link11.attr("src")
+                        
+                        if linkHtml1 == "-" {
+                            continue
+                        }
+                        
+                        print("l : \(linkText1)")
+                        print("li : \(linkHtml1)")
+                        print("li11 : \(link11)")
+                        print("")
+                        
+                        let range1 = link11.range(of:"/img/common/small_ball_")
+                        let index1 = range1!.upperBound
+                        let indexEndOfText = link11.index(link11.endIndex, offsetBy: -4)
+                        let subStr1 = String(link11[index1..<indexEndOfText])
+                        
+                        print("subStr1 : \(subStr1)")
+                        
+//                        let indexStartOfText = template.index(template.startIndex, offsetBy: 3)
+//                        let indexEndOfText = template.index(template.endIndex, offsetBy: -3)
+//                        let substring3 = template[indexStartOfText..<indexEndOfText] // "Hello"
+                        
+                        cc.append(subStr1)
+                    }
+                    
+                    if linkHtml == "-" {
+                        continue
+                    }
+                    
+                    print("linkText : \(linkText)")
+                    
+                    
+                    
+                    cc.sort(){$0.localizedStandardCompare($1) == .orderedAscending}
+                    
+                    for part : String in cc {
+                        print("part : \(part)")
+                    }
+                    
+                    print("linkHtml : \(linkHtml)")
+                    print("-----------------")
+                    
+                    
+                    let docc1: Document = try! SwiftSoup.parse(linkHtml)
+                    print("")
+                }
                 
             } catch Exception.Error(let type, let message) {
                 print("Exception.Error : \(message)")
