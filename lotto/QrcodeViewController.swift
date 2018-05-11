@@ -60,17 +60,21 @@ class QrcodeViewController: UIViewController, QRCodeReaderViewControllerDelegate
                 
                 let docc: Document = try SwiftSoup.parse(data)
                 
-                let linka11: Element = try docc.select("li.pt10").first()!
+                let linkaaa: Element = try docc.select("li.pt10").first()!
                 print("")
-                print("linka.html() : \(try! linka11.html())")
+                print("linka.html() : \(try! linkaaa.html())")
                 print("")
                 
                 
                 
                 //let docc1: Document = try! SwiftSoup.parse(linka11.html())
-                for aabb: Element in try linka11.getElementsByTag("img").array() {
+                for aabb: Element in try linkaaa.getElementsByTag("img").array() {
                     
-            
+                    print("aabb() : \(try! aabb.attr("alt"))")
+                    var bbbb = try! aabb.attr("alt")
+                    let indexEndOfText = bbbb.index(bbbb.endIndex, offsetBy: -1)
+                    let substring3 = bbbb[..<indexEndOfText] // "Hello"
+                    print("substring3() : \(substring3)")
                     print("")
                 }
                 
