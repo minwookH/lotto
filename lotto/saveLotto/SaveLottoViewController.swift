@@ -12,6 +12,7 @@ class SaveLottoViewController: UIViewController, UICollectionViewDataSource, UIC
     
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var navigationBar: UINavigationBar!
+    @IBOutlet weak var selectNumberView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,7 +39,9 @@ class SaveLottoViewController: UIViewController, UICollectionViewDataSource, UIC
         // Dispose of any resources that can be recreated.
     }
     
-
+    @IBAction func selectNumberInit(_ sender: UIButton) {
+    }
+    
     /*
     // MARK: - Navigation
 

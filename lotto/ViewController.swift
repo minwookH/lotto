@@ -97,6 +97,11 @@ class ViewController: UIViewController , UICollectionViewDataSource, UICollectio
             print("didSelectItemAt 4")
         } else if indexPath.row == 5{
             print("didSelectItemAt 5")
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+            
+            let nextViewController = storyBoard.instantiateViewController(withIdentifier: "ReviewUploadViewController") as! ReviewUploadViewController
+            self.present(nextViewController, animated:true, completion:nil)
+            
         }
     }
 

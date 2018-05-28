@@ -12,6 +12,7 @@
 		A763CFB32075C03700F7DA22 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A763CFB22075C03700F7DA22 /* TestViewController.swift */; };
 		A763CFB62075C0F400F7DA22 /* mask.png in Resources */ = {isa = PBXBuildFile; fileRef = A763CFB42075C0F300F7DA22 /* mask.png */; };
 		A763CFB72075C0F400F7DA22 /* image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A763CFB52075C0F300F7DA22 /* image.jpg */; };
+		A774A30C20AAF66B00E28F5B /* ReviewUploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A774A30B20AAF66B00E28F5B /* ReviewUploadViewController.swift */; };
 		A776B3D220860EE60045C40F /* MainCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A776B3D120860EE60045C40F /* MainCollectionViewFlowLayout.swift */; };
 		A7787028208887BF0085097A /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7787026208887BF0085097A /* Realm.framework */; };
 		A778D26F2073ACFB00D79D89 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778D26E2073ACFB00D79D89 /* AppDelegate.swift */; };
@@ -21,9 +22,11 @@
 		A778D2792073ACFB00D79D89 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A778D2772073ACFB00D79D89 /* LaunchScreen.storyboard */; };
 		A778D2892073B11200D79D89 /* QrcodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A778D2882073B11200D79D89 /* QrcodeViewController.swift */; };
 		A78048CB2089A5CE005A9078 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7787025208887BF0085097A /* RealmSwift.framework */; };
+		A780DC7420B53B660054DFD1 /* SelectNumberViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A780DC7320B53B660054DFD1 /* SelectNumberViewCell.swift */; };
 		A78E2661209C1C02007A6992 /* SaveLottoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78E2660209C1C02007A6992 /* SaveLottoViewController.swift */; };
 		A78E2663209C31F5007A6992 /* SaveLottoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78E2662209C31F5007A6992 /* SaveLottoCollectionViewCell.swift */; };
 		A78E2666209C5673007A6992 /* NetworkApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78E2665209C5673007A6992 /* NetworkApiManager.swift */; };
+		A79AEDA420A92AAD00128096 /* MemoLottoNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = A79AEDA320A92AAD00128096 /* MemoLottoNumber.swift */; };
 		A7A4B686207CD17A0078FF83 /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A4B685207CD17A0078FF83 /* MainCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,7 @@
 		A763CFB22075C03700F7DA22 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		A763CFB42075C0F300F7DA22 /* mask.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mask.png; sourceTree = "<group>"; };
 		A763CFB52075C0F300F7DA22 /* image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image.jpg; sourceTree = "<group>"; };
+		A774A30B20AAF66B00E28F5B /* ReviewUploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewUploadViewController.swift; sourceTree = "<group>"; };
 		A77506B220A19FDF002D4E95 /* Kanna.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kanna.framework; path = Carthage/Build/iOS/Kanna.framework; sourceTree = "<group>"; };
 		A776B3D120860EE60045C40F /* MainCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 		A7787025208887BF0085097A /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
@@ -46,9 +50,11 @@
 		A778D27A2073ACFB00D79D89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A778D2842073B0B800D79D89 /* QRCodeReader.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QRCodeReader.framework; path = Carthage/Build/iOS/QRCodeReader.framework; sourceTree = "<group>"; };
 		A778D2882073B11200D79D89 /* QrcodeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QrcodeViewController.swift; sourceTree = "<group>"; };
+		A780DC7320B53B660054DFD1 /* SelectNumberViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectNumberViewCell.swift; sourceTree = "<group>"; };
 		A78E2660209C1C02007A6992 /* SaveLottoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLottoViewController.swift; sourceTree = "<group>"; };
 		A78E2662209C31F5007A6992 /* SaveLottoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveLottoCollectionViewCell.swift; sourceTree = "<group>"; };
 		A78E2665209C5673007A6992 /* NetworkApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkApiManager.swift; sourceTree = "<group>"; };
+		A79AEDA320A92AAD00128096 /* MemoLottoNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoLottoNumber.swift; sourceTree = "<group>"; };
 		A7A4B685207CD17A0078FF83 /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -65,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A774A30A20AAF50E00E28F5B /* reviewUpload */ = {
+			isa = PBXGroup;
+			children = (
+				A774A30B20AAF66B00E28F5B /* ReviewUploadViewController.swift */,
+			);
+			path = reviewUpload;
+			sourceTree = "<group>";
+		};
 		A778D2622073ACFB00D79D89 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +99,8 @@
 		A778D26D2073ACFB00D79D89 /* lotto */ = {
 			isa = PBXGroup;
 			children = (
+				A774A30A20AAF50E00E28F5B /* reviewUpload */,
+				A79AEDA220A92A6700128096 /* vo */,
 				A78E2664209C565D007A6992 /* network */,
 				A78E265F209C1BD6007A6992 /* saveLotto */,
 				A763CFB52075C0F300F7DA22 /* image.jpg */,
@@ -121,6 +137,7 @@
 			children = (
 				A78E2660209C1C02007A6992 /* SaveLottoViewController.swift */,
 				A78E2662209C31F5007A6992 /* SaveLottoCollectionViewCell.swift */,
+				A780DC7320B53B660054DFD1 /* SelectNumberViewCell.swift */,
 			);
 			path = saveLotto;
 			sourceTree = "<group>";
@@ -131,6 +148,14 @@
 				A78E2665209C5673007A6992 /* NetworkApiManager.swift */,
 			);
 			path = network;
+			sourceTree = "<group>";
+		};
+		A79AEDA220A92A6700128096 /* vo */ = {
+			isa = PBXGroup;
+			children = (
+				A79AEDA320A92AAD00128096 /* MemoLottoNumber.swift */,
+			);
+			path = vo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +242,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/QRCodeReader.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/SwiftSoup.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
 			);
 			outputPaths = (
 			);
@@ -238,8 +264,11 @@
 				A776B3D220860EE60045C40F /* MainCollectionViewFlowLayout.swift in Sources */,
 				A778D26F2073ACFB00D79D89 /* AppDelegate.swift in Sources */,
 				A778D2892073B11200D79D89 /* QrcodeViewController.swift in Sources */,
+				A780DC7420B53B660054DFD1 /* SelectNumberViewCell.swift in Sources */,
 				A763CFB32075C03700F7DA22 /* TestViewController.swift in Sources */,
 				A78E2663209C31F5007A6992 /* SaveLottoCollectionViewCell.swift in Sources */,
+				A774A30C20AAF66B00E28F5B /* ReviewUploadViewController.swift in Sources */,
+				A79AEDA420A92AAD00128096 /* MemoLottoNumber.swift in Sources */,
 				A78E2666209C5673007A6992 /* NetworkApiManager.swift in Sources */,
 				A763CFB02075BF9200F7DA22 /* ScratchUIView.swift in Sources */,
 			);
