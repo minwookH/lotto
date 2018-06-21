@@ -21,6 +21,9 @@ class SaveLottoViewController: UIViewController, UICollectionViewDataSource, UIC
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        selectNumberView.delegate = self
+        selectNumberView.dataSource = self
+        
         var items = navigationItem
         
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(backAction))
